@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vdSenTodXKg1wJmKosyVWPOl4kojR/HZqzerYOy9yS8e4ndJhqUJiOZ4qcmcK1AxBgiYSNiyV9qZteDKanMiPQ==",
+  "dgSpecHash": "grOTdTQttoQLLNPwTrqnHPtCZ+FUgT1YHHzs3WIU/cGlQPdeKsJYYbvyxme57r/34QX3oLh8vZuHAiKv/KmFmw==",
   "success": true,
-  "projectFilePath": "E:\\Mobile App\\essential-ui-kit-for-xamarin.forms-master\\EssentialUIKit.Android\\EssentialUIKit.Android.csproj",
+  "projectFilePath": "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit.Android\\EssentialUIKit.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pragan\\.nuget\\packages\\microsoft.appcenter\\2.0.0\\microsoft.appcenter.2.0.0.nupkg.sha512",
     "C:\\Users\\Pragan\\.nuget\\packages\\microsoft.appcenter.analytics\\2.0.0\\microsoft.appcenter.analytics.2.0.0.nupkg.sha512",

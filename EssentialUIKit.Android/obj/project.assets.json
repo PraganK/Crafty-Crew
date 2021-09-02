@@ -3248,18 +3248,18 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Mobile App\\essential-ui-kit-for-xamarin.forms-master\\EssentialUIKit.Android\\EssentialUIKit.Android.csproj",
+      "projectUniqueName": "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit.Android\\EssentialUIKit.Android.csproj",
       "projectName": "EssentialUIKit.Android",
-      "projectPath": "E:\\Mobile App\\essential-ui-kit-for-xamarin.forms-master\\EssentialUIKit.Android\\EssentialUIKit.Android.csproj",
+      "projectPath": "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit.Android\\EssentialUIKit.Android.csproj",
       "packagesPath": "C:\\Users\\Pragan\\.nuget\\packages\\",
-      "outputPath": "E:\\Mobile App\\essential-ui-kit-for-xamarin.forms-master\\EssentialUIKit.Android\\obj\\",
+      "outputPath": "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "E:\\Mobile App\\essential-ui-kit-for-xamarin.forms-master\\NuGet.Config",
+        "E:\\Mobile App\\Crafty-Crew\\NuGet.Config",
         "C:\\Users\\Pragan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -3274,8 +3274,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "E:\\Mobile App\\essential-ui-kit-for-xamarin.forms-master\\EssentialUIKit\\EssentialUIKit.csproj": {
-              "projectPath": "E:\\Mobile App\\essential-ui-kit-for-xamarin.forms-master\\EssentialUIKit\\EssentialUIKit.csproj"
+            "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit\\EssentialUIKit.csproj": {
+              "projectPath": "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit\\EssentialUIKit.csproj"
             }
           }
         }
