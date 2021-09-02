@@ -121,7 +121,8 @@
                             Margin="0,16"
                             Command="{Binding LoginCommand}"
                             Style="{StaticResource SfButtonStyle}"
-                            Text="LOG IN" />
+                            Text="LOG IN" 
+                            Clicked="NavigateButton_OnClicked"/>
 
 
                         <Label

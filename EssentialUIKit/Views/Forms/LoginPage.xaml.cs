@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms.Internals;
+﻿using System;
+using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
 
 namespace EssentialUIKit.Views.Forms
@@ -16,6 +17,11 @@ namespace EssentialUIKit.Views.Forms
         public LoginPage()
         {
             InitializeComponent();
+        }
+
+        private async void NavigateButton_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new EssentialUIKit.AppLayout.Views.HomePage());
         }
     }
 }

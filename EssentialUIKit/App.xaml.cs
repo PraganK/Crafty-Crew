@@ -1,4 +1,5 @@
 ﻿using EssentialUIKit.AppLayout.Views;
+using EssentialUIKit.Views.Forms;
 #if EnableAppCenterAnalytics
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
@@ -34,7 +35,9 @@ namespace EssentialUIKit
             InitializeComponent();
 
             // this.MainPage = new AppShell();
-            this.MainPage = new NavigationPage(new HomePage());
+            //this.MainPage = new NavigationPage(new HomePage());
+
+            this.MainPage = new NavigationPage(new LoginPage());
         }
 
         #endregion
