@@ -453,3 +453,5 @@ E:\Mobile App\Crafty-Crew\EssentialUIKit\obj\Debug\netstandard2.0\EssentialUIKit
 E:\Mobile App\Crafty-Crew\EssentialUIKit\obj\Debug\netstandard2.0\XamlC.stamp
 E:\Mobile App\Crafty-Crew\EssentialUIKit\obj\Debug\netstandard2.0\EssentialUIKit.dll
 E:\Mobile App\Crafty-Crew\EssentialUIKit\obj\Debug\netstandard2.0\EssentialUIKit.pdb
+E:\Mobile App\Crafty-Crew\EssentialUIKit\obj\Debug\netstandard2.0\AppLayout\Views\NewHomePage.xaml.g.cs
+E:\Mobile App\Crafty-Crew\EssentialUIKit\obj\Debug\netstandard2.0\Views\Navigation\AboutUsPage.xaml.g.cs

@@ -15,7 +15,9 @@
     <x:String x:Key="SettingsIcon">&#xe72b;</x:String>
     <x:String x:Key="Next">&#xe71a;</x:String>
     <x:String x:Key="EditIcon">&#xe727;</x:String>
-
+    <x:String x:Key="AboutUsIcon">&#xe714;</x:String>
+    <x:String x:Key="HomeIcon">&#xe706;</x:String>
+    
     <Style x:Key="RatingLabelStyle" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}" />
         <Setter Property="FontSize" Value="16" />

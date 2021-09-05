@@ -110,6 +110,9 @@
     <EmbeddedResource Include="Images\SomethingWentWrong.svg" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AppLayout\Views\NewHomePage.xaml.cs">
+      <DependentUpon>NewHomePage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="AppLayout\Views\Styles.xaml.cs">
         <DependentUpon>%(Filename)</DependentUpon>
     </Compile>
@@ -136,6 +139,9 @@
     </Compile>
     <Compile Update="Views\Bookmarks\BookmarksPage.xaml.cs">
       <DependentUpon>BookmarksPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Navigation\AboutUsPage.xaml.cs">
+      <DependentUpon>AboutUsPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\Profile\MasterPage.xaml.cs">
       <DependentUpon>MasterPage.xaml</DependentUpon>
