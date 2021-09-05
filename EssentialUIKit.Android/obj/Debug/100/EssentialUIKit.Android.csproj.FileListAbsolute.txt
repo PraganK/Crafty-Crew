@@ -1,0 +1,4 @@
+C:\Users\ramsheer\source\repos\Crafty-Crew-Dev\EssentialUIKit.Android\obj\Debug\100\MonoAndroid,Version=v10.0.AssemblyAttributes.cs
+C:\Users\ramsheer\source\repos\Crafty-Crew-Dev\EssentialUIKit.Android\obj\Debug\100\build.props
+C:\Users\ramsheer\source\repos\Crafty-Crew-Dev\EssentialUIKit.Android\obj\Debug\100\adb.props
+C:\Users\ramsheer\source\repos\Crafty-Crew-Dev\EssentialUIKit.Android\obj\Debug\100\EssentialUIKit.Android.csproj.AssemblyReference.cache
