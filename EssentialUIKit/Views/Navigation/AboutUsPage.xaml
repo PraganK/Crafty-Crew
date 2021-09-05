@@ -9,7 +9,7 @@
     xmlns:viewModel="clr-namespace:EssentialUIKit.ViewModels.About"   
     BackgroundColor="{DynamicResource Gray-White}"
     NavigationPage.HasNavigationBar="False">
-
+    
     <ContentPage.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -17,7 +17,7 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </ContentPage.Resources>
-
+    
     <ContentPage.Content>
         <ScrollView>
             <Grid RowSpacing="0" VerticalOptions="Center">
