@@ -36,7 +36,7 @@ namespace EssentialUIKit
             InitializeComponent();
 
             // this.MainPage = new AppShell();
-            //this.MainPage = new NavigationPage(new HomePage());
+          //  this.MainPage = new NavigationPage(new HomePage());
 
             //this.MainPage = new NavigationPage(new LoginPage());
 

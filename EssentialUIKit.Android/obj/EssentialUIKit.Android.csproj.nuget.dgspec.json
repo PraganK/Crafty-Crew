@@ -1,47 +1,47 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit.Android\\EssentialUIKit.Android.csproj": {}
+    "C:\\Users\\ramsheer\\source\\repos\\Crafty-Crew-Dev\\EssentialUIKit.Android\\EssentialUIKit.Android.csproj": {}
   },
   "projects": {
-    "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit.Android\\EssentialUIKit.Android.csproj": {
+    "C:\\Users\\ramsheer\\source\\repos\\Crafty-Crew-Dev\\EssentialUIKit.Android\\EssentialUIKit.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit.Android\\EssentialUIKit.Android.csproj",
+        "projectUniqueName": "C:\\Users\\ramsheer\\source\\repos\\Crafty-Crew-Dev\\EssentialUIKit.Android\\EssentialUIKit.Android.csproj",
         "projectName": "EssentialUIKit.Android",
-        "projectPath": "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit.Android\\EssentialUIKit.Android.csproj",
-        "packagesPath": "C:\\Users\\Pragan\\.nuget\\packages\\",
-        "outputPath": "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit.Android\\obj\\",
+        "projectPath": "C:\\Users\\ramsheer\\source\\repos\\Crafty-Crew-Dev\\EssentialUIKit.Android\\EssentialUIKit.Android.csproj",
+        "packagesPath": "C:\\Users\\ramsheer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ramsheer\\source\\repos\\Crafty-Crew-Dev\\EssentialUIKit.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "E:\\Mobile App\\Crafty-Crew\\NuGet.Config",
-          "C:\\Users\\Pragan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ramsheer\\source\\repos\\Crafty-Crew-Dev\\NuGet.Config",
+          "C:\\Users\\ramsheer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "monoandroid90"
+          "monoandroid10.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "monoandroid90": {
+          "monoandroid10.0": {
             "projectReferences": {
-              "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit\\EssentialUIKit.csproj": {
-                "projectPath": "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit\\EssentialUIKit.csproj"
+              "C:\\Users\\ramsheer\\source\\repos\\Crafty-Crew-Dev\\EssentialUIKit\\EssentialUIKit.csproj": {
+                "projectPath": "C:\\Users\\ramsheer\\source\\repos\\Crafty-Crew-Dev\\EssentialUIKit\\EssentialUIKit.csproj"
               }
             }
           }
         }
       },
       "frameworks": {
-        "monoandroid90": {
+        "monoandroid10.0": {
           "dependencies": {
             "SkiaSharp.Extended": {
               "target": "Package",
@@ -53,123 +53,135 @@
             },
             "SkiaSharp.Views.Forms": {
               "target": "Package",
-              "version": "[1.68.0, )"
+              "version": "[2.80.3, )"
             },
             "Syncfusion.Xamarin.Buttons": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.Cards": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.Core": {
               "target": "Package",
-              "version": "[17.3.0.9-beta, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.DataSource": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.Expander": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.GridCommon": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfBadgeView": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfCalendar": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfComboBox": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfListView": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfMaps": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfParallaxView": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfPopupLayout": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfProgressBar": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfRating": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfRotator": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfTabView": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Xamarin.Android.Support.CustomTabs": {
               "target": "Package",
-              "version": "[28.0.0.1, )"
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Android.Support.Design": {
               "target": "Package",
-              "version": "[28.0.0.1, )"
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Android.Support.v4": {
               "target": "Package",
-              "version": "[28.0.0.1, )"
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Android.Support.v7.AppCompat": {
               "target": "Package",
-              "version": "[28.0.0.1, )"
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Android.Support.v7.CardView": {
               "target": "Package",
-              "version": "[28.0.0.1, )"
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Android.Support.v7.MediaRouter": {
               "target": "Package",
-              "version": "[28.0.0.1, )"
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.AndroidX.Core": {
+              "target": "Package",
+              "version": "[1.6.0.1, )"
+            },
+            "Xamarin.AndroidX.MediaRouter": {
+              "target": "Package",
+              "version": "[1.2.4.1, )"
+            },
+            "Xamarin.AndroidX.RecyclerView": {
+              "target": "Package",
+              "version": "[1.2.1.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.3.0.778476-pre1, )"
+              "version": "[5.0.0.2083, )"
             }
           }
         }
       }
     },
-    "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit\\EssentialUIKit.csproj": {
+    "C:\\Users\\ramsheer\\source\\repos\\Crafty-Crew-Dev\\EssentialUIKit\\EssentialUIKit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit\\EssentialUIKit.csproj",
+        "projectUniqueName": "C:\\Users\\ramsheer\\source\\repos\\Crafty-Crew-Dev\\EssentialUIKit\\EssentialUIKit.csproj",
         "projectName": "EssentialUIKit",
-        "projectPath": "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit\\EssentialUIKit.csproj",
-        "packagesPath": "C:\\Users\\Pragan\\.nuget\\packages\\",
-        "outputPath": "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit\\obj\\",
+        "projectPath": "C:\\Users\\ramsheer\\source\\repos\\Crafty-Crew-Dev\\EssentialUIKit\\EssentialUIKit.csproj",
+        "packagesPath": "C:\\Users\\ramsheer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ramsheer\\source\\repos\\Crafty-Crew-Dev\\EssentialUIKit\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "E:\\Mobile App\\Crafty-Crew\\NuGet.Config",
-          "C:\\Users\\Pragan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ramsheer\\source\\repos\\Crafty-Crew-Dev\\NuGet.Config",
+          "C:\\Users\\ramsheer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -182,6 +194,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -193,14 +206,15 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "Microsoft.AppCenter.Analytics": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[4.3.0, )"
             },
             "Microsoft.AppCenter.Crashes": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[4.3.0, )"
             },
             "NETStandard.Library": {
               "target": "Package",
@@ -216,83 +230,83 @@
             },
             "SkiaSharp.Views.Forms": {
               "target": "Package",
-              "version": "[1.68.0, )"
+              "version": "[2.80.3, )"
             },
             "Syncfusion.Xamarin.Buttons": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.Cards": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.Core": {
               "target": "Package",
-              "version": "[17.3.0.9-beta, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.DataSource": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.Expander": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.GridCommon": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfBadgeView": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfCalendar": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfChart": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfComboBox": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfListView": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfMaps": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfParallaxView": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfPopupLayout": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfProgressBar": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfRating": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfRotator": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Syncfusion.Xamarin.SfTabView": {
               "target": "Package",
-              "version": "[17.2.0.49, )"
+              "version": "[19.2.0.60, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.3.0.778476-pre1, )"
+              "version": "[5.0.0.2083, )"
             }
           },
           "imports": [
@@ -305,7 +319,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

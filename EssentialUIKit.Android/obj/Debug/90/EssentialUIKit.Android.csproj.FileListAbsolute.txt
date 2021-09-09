@@ -775,3 +775,6 @@ E:\Mobile App\Crafty-Crew\EssentialUIKit.Android\obj\Debug\90\stamp\_ConvertReso
 E:\Mobile App\Crafty-Crew\EssentialUIKit.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 E:\Mobile App\Crafty-Crew\EssentialUIKit.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 E:\Mobile App\Crafty-Crew\EssentialUIKit.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\ramsheer\source\repos\Crafty-Crew-Dev\EssentialUIKit.Android\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
+C:\Users\ramsheer\source\repos\Crafty-Crew-Dev\EssentialUIKit.Android\obj\Debug\90\build.props
+C:\Users\ramsheer\source\repos\Crafty-Crew-Dev\EssentialUIKit.Android\obj\Debug\90\adb.props

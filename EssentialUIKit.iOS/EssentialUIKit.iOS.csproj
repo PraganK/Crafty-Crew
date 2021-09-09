@@ -173,7 +173,7 @@
     <PackageReference Include="Syncfusion.Xamarin.SfTabView">
       <Version>17.2.0.49</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.3.0.778476-pre1" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
