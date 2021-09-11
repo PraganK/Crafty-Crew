@@ -57,6 +57,10 @@
               "target": "Package",
               "version": "[2.0.3, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "SkiaSharp.Extended": {
               "target": "Package",
               "version": "[1.60.0, )"

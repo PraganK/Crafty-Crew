@@ -26,14 +26,14 @@
     <local:AboutUsPage Title="Favourite">
         <local:AboutUsPage.IconImageSource>
             <FontImageSource FontFamily="{StaticResource FontIcons}"
-                                 Glyph="{StaticResource AboutUsIcon}"
+                                 Glyph="{StaticResource FavIcon}"
                                  Size="16"/>
         </local:AboutUsPage.IconImageSource>
     </local:AboutUsPage>
     <local:AboutUsPage Title="Cart">
         <local:AboutUsPage.IconImageSource>
             <FontImageSource FontFamily="{StaticResource FontIcons}"
-                                 Glyph="{StaticResource AboutUsIcon}"
+                                 Glyph="{StaticResource CartIcon}"
                                  Size="16"/>
         </local:AboutUsPage.IconImageSource>
     </local:AboutUsPage>

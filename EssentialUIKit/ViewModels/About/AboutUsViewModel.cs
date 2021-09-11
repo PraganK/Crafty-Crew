@@ -1,7 +1,11 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Net;
 using System.Runtime.CompilerServices;
 using EssentialUIKit.Models.About;
+using Newtonsoft.Json;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
@@ -25,59 +29,79 @@ namespace EssentialUIKit.ViewModels.About
 
         #endregion
 
+        #region Json
+
+        private AboutModel about;
+
+        #endregion
+
         #region Constructor
 
         /// <summary>
         /// Initializes a new instance for the <see cref="T:EssentialUIKit.ViewModels.About.AboutUsViewModel"/> class.
         /// </summary>
         public AboutUsViewModel()
-        {
-            this.productDescription =
-                "Situated in the heart of Smith-town, Acme Products, Inc., has a long-standing tradition of selling the best products while providing the fastest service on the market. Since 1952, we’ve helped our customers identify their needs, understand their wants, and capture their dreams.";
+        {           
             this.productIcon = App.BaseImageUrl + "Icon.png";
             this.productVersion = "1.0";
             this.cardsTopImage = App.BaseImageUrl + "Mask.png";
 
-            this.EmployeeDetails = new ObservableCollection<AboutUsModel>
+            string json = (new WebClient()).DownloadString("http://devathondemo.appspot.com/page?pageTitle=About%20us");
+            this.about = JsonConvert.DeserializeObject<AboutModel>(json);
+
+            this.productDescription = this.about.pageContent;               
+
+            this.EmployeeDetails = new ObservableCollection<AboutUsModel>();
+
+            foreach (var member in this.about.members)
             {
-                new AboutUsModel
-                {
-                    EmployeeName = "Alice",
-                    Image = App.BaseImageUrl + "ProfileImage15.png",
-                    Designation = "Project Manager"
-                },
-                new AboutUsModel
-                {
-                    EmployeeName = "Jessica Park",
-                    Image = App.BaseImageUrl + "ProfileImage10.png",
-                    Designation = "Senior Manager"
-                },
-                new AboutUsModel
-                {
-                    EmployeeName = "Lisa",
-                    Image = App.BaseImageUrl + "ProfileImage11.png",
-                    Designation = "Senior Developer"
-                },
-                new AboutUsModel
-                {
-                    EmployeeName = "Rebecca",
-                    Image = App.BaseImageUrl + "ProfileImage12.png",
-                    Designation = "Senior Designer"
-                },
-                new AboutUsModel
-                {
-                    EmployeeName = "Alexander",
-                    Image = App.BaseImageUrl + "ProfileImage3.png",
-                    Designation = "Senior Manager"
-                },
-                new AboutUsModel
-                {
-                    EmployeeName = "Anthony",
-                    Image = App.BaseImageUrl + "ProfileImage1.png",
-                    Designation = "Senior Developer"
-                }
-            };
-            
+                this.EmployeeDetails.Add(
+                     new AboutUsModel
+                     {
+                         EmployeeName = member.name,
+                         Image = member.imageUrl,
+                         Designation = "Developer"
+                     });
+            }
+            //{
+            //    new AboutUsModel
+            //    {
+            //        EmployeeName = "Alice",
+            //        Image = App.BaseImageUrl + "ProfileImage15.png",
+            //        Designation = "Project Manager"
+            //    },
+            //    new AboutUsModel
+            //    {
+            //        EmployeeName = "Jessica Park",
+            //        Image = App.BaseImageUrl + "ProfileImage10.png",
+            //        Designation = "Senior Manager"
+            //    },
+            //    new AboutUsModel
+            //    {
+            //        EmployeeName = "Lisa",
+            //        Image = App.BaseImageUrl + "ProfileImage11.png",
+            //        Designation = "Senior Developer"
+            //    },
+            //    new AboutUsModel
+            //    {
+            //        EmployeeName = "Rebecca",
+            //        Image = App.BaseImageUrl + "ProfileImage12.png",
+            //        Designation = "Senior Designer"
+            //    },
+            //    new AboutUsModel
+            //    {
+            //        EmployeeName = "Alexander",
+            //        Image = App.BaseImageUrl + "ProfileImage3.png",
+            //        Designation = "Senior Manager"
+            //    },
+            //    new AboutUsModel
+            //    {
+            //        EmployeeName = "Anthony",
+            //        Image = App.BaseImageUrl + "ProfileImage1.png",
+            //        Designation = "Senior Developer"
+            //    }
+            //};
+
             this.ItemSelectedCommand = new Command(this.ItemSelected);
         }
 
