@@ -16,25 +16,39 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </TabbedPage.Resources>
-    <local:PhotosPage Title="Photos">
+    <local:PhotosPage Title="Home">
         <local:PhotosPage.IconImageSource>
             <FontImageSource FontFamily="{StaticResource FontIcons}"
                                  Glyph="{StaticResource HomeIcon}"
                                  Size="16"/>
         </local:PhotosPage.IconImageSource>
-    </local:PhotosPage>
-    <local:RamTest Title="Services">
-        <local:RamTest.IconImageSource>
+    </local:PhotosPage>    
+    <local:AboutUsPage Title="Favourite">
+        <local:AboutUsPage.IconImageSource>
             <FontImageSource FontFamily="{StaticResource FontIcons}"
                                  Glyph="{StaticResource AboutUsIcon}"
                                  Size="16"/>
-        </local:RamTest.IconImageSource>
-    </local:RamTest>
-    <local:SettingsPage Title="Settings">
+        </local:AboutUsPage.IconImageSource>
+    </local:AboutUsPage>
+    <local:AboutUsPage Title="Cart">
+        <local:AboutUsPage.IconImageSource>
+            <FontImageSource FontFamily="{StaticResource FontIcons}"
+                                 Glyph="{StaticResource AboutUsIcon}"
+                                 Size="16"/>
+        </local:AboutUsPage.IconImageSource>
+    </local:AboutUsPage>
+    <local:AboutUsPage Title="About Us">
+        <local:AboutUsPage.IconImageSource>
+            <FontImageSource FontFamily="{StaticResource FontIcons}"
+                                 Glyph="{StaticResource AboutUsIcon}"
+                                 Size="16"/>
+        </local:AboutUsPage.IconImageSource>
+    </local:AboutUsPage>
+    <!--<local:SettingsPage Title="Settings">
         <local:SettingsPage.IconImageSource>
             <FontImageSource FontFamily="{StaticResource FontIcons}"
                                  Glyph="{StaticResource SettingsIcon}"
                                  Size="16"/>
         </local:SettingsPage.IconImageSource>
-    </local:SettingsPage>
+    </local:SettingsPage>-->
 </TabbedPage>

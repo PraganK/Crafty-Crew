@@ -10,12 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\Navigation\AboutUsPage.xaml.cs" />
     <Compile Remove="Views\Navigation\CraftyHome.xaml.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove="Views\Navigation\AboutUsPage.xaml" />
     <EmbeddedResource Remove="Views\Navigation\CraftyHome.xaml" />
   </ItemGroup>
 
