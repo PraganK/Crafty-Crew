@@ -33,6 +33,8 @@
     <EnableLLVM>false</EnableLLVM>
     <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
     <BundleAssemblies>false</BundleAssemblies>
+    <AndroidHttpClientHandlerType>System.Net.Http.HttpClientHandler</AndroidHttpClientHandlerType>
+    <AndroidTlsProvider>btls</AndroidTlsProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <AndroidEnableProfiledAot>true</AndroidEnableProfiledAot>
@@ -276,7 +278,7 @@
   </Target>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties XamarinHotReloadUnhandledDeviceExceptionEssentialUIKitAndroidHideInfoBar="True" XamarinHotReloadXFormsNugetUpgradeInfoBarEssentialUIKitAndroidHideInfoBar="True" />
+      <UserProperties XamarinHotReloadXFormsNugetUpgradeInfoBarEssentialUIKitAndroidHideInfoBar="True" XamarinHotReloadUnhandledDeviceExceptionEssentialUIKitAndroidHideInfoBar="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

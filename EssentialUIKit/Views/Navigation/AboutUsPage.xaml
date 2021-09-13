@@ -119,8 +119,8 @@
                                     <Image BackgroundColor="{DynamicResource Gray-200}" Style="{StaticResource AboutUsImageStyle}">
                                         <Image.Source>
                                             <UriImageSource
-                                                CacheValidity="14"
-                                                CachingEnabled="true"
+                                                CacheValidity="0"
+                                                CachingEnabled="false"
                                                 Uri="{Binding Image}" />
                                         </Image.Source>
                                     </Image>

@@ -26,21 +26,21 @@ namespace EssentialUIKit
         /// </summary>
         public App()
         {
-#if EnableAppCenterAnalytics
-            // AppCenter.Start(
-            //    $"ios={AppSettings.IOSSecretCode};android={AppSettings.AndroidSecretCode};uwp={AppSettings.UWPSecretCode}",
-            //    typeof(Analytics),
-            //    typeof(Crashes));
-#endif
+            #if EnableAppCenterAnalytics
+                        // AppCenter.Start(
+                        //    $"ios={AppSettings.IOSSecretCode};android={AppSettings.AndroidSecretCode};uwp={AppSettings.UWPSecretCode}",
+                        //    typeof(Analytics),
+                        //    typeof(Crashes));
+            #endif
 
             InitializeComponent();
 
             // this.MainPage = new AppShell();
-          //  this.MainPage = new NavigationPage(new HomePage());
+            // this.MainPage = new NavigationPage(new HomePage());
 
-            //this.MainPage = new NavigationPage(new LoginPage());
+            this.MainPage = new NavigationPage(new LoginPage());
 
-            this.MainPage = new NavigationPage(new NewHomePage());
+            //this.MainPage = new NavigationPage(new NewHomePage());
         }
 
         #endregion

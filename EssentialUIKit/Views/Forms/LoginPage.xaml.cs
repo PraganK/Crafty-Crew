@@ -21,7 +21,7 @@ namespace EssentialUIKit.Views.Forms
 
         private async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new EssentialUIKit.AppLayout.Views.HomePage());
+            await Navigation.PushAsync(new EssentialUIKit.AppLayout.Views.NewHomePage());
         }
     }
 }
