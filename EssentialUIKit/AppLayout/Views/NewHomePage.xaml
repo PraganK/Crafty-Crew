@@ -2,6 +2,7 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:EssentialUIKit.Views.Navigation"
+             xmlns:RamTest="clr-namespace:EssentialUIKit.Views.Article"
              x:Class="EssentialUIKit.AppLayout.Views.NewHomePage"
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
              android:TabbedPage.ToolbarPlacement="Bottom"
@@ -16,13 +17,32 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </TabbedPage.Resources>
-    <local:PhotosPage Title="Home">
+    <!--<local:PhotosPage Title="Home">
         <local:PhotosPage.IconImageSource>
             <FontImageSource FontFamily="{StaticResource FontIcons}"
                                  Glyph="{StaticResource HomeIcon}"
                                  Size="16"/>
         </local:PhotosPage.IconImageSource>
-    </local:PhotosPage>    
+    </local:PhotosPage>-->
+
+
+     <local:HomePage Title="Home">
+        
+    </local:HomePage>
+
+    <RamTest:ArticleParallaxHeaderPage Title="Catt">
+
+    </RamTest:ArticleParallaxHeaderPage>
+
+    <!--<RamTest:CategoryTilePage Title="Catt">
+
+    </RamTest:CategoryTilePage>-->
+    <!--<RamTest:ProductHomePage Title="Catt">
+
+    </RamTest:ProductHomePage>-->
+
+
+
     <local:AboutUsPage Title="Favourite">
         <local:AboutUsPage.IconImageSource>
             <FontImageSource FontFamily="{StaticResource FontIcons}"

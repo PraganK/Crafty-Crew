@@ -59,6 +59,7 @@
     <None Remove="Data\deliverytracking.json" />
     <None Remove="DataService\trainstatus.json" />
     <None Remove="Data\ecommerce.json" />
+    <None Remove="Data\medicalServices.json" />
     <None Remove="Data\navigation.json" />
     <None Remove="Images\ChooseGradient.svg" />
     <None Remove="Images\ConfirmGradient.svg" />
@@ -98,6 +99,7 @@
     <EmbeddedResource Include="AppLayout\Icons\transaction.png" />
     <EmbeddedResource Include="AppLayout\TemplateList.xml" />
     <EmbeddedResource Include="Data\deliverytracking.json" />
+    <EmbeddedResource Include="Data\medicalServices.json" />
     <EmbeddedResource Include="Data\trainstatus.json" />
     <EmbeddedResource Include="Data\ecommerce.json" />
     <EmbeddedResource Include="Data\navigation.json" />
@@ -281,6 +283,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Views\Navigation\HomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Navigation\RamTest.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
