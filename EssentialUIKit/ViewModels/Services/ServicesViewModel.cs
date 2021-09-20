@@ -50,6 +50,7 @@ namespace EssentialUIKit.ViewModels.Services
                 this.lstServices.Add(
                      new ServicesModel
                      {
+                         serviceId = item.serviceId,
                          title = item.title,
                          subTitle = item.subTitle,
                          shortDesc = item.shortDesc,

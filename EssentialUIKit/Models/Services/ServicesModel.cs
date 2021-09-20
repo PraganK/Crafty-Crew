@@ -10,7 +10,7 @@ namespace EssentialUIKit.Models.Services
     public class ServicesModel : INotifyPropertyChanged
     {
         #region Fields
-
+        private string _serviceId;
         private string _title;
         private string _subTitle;
         private string _shortDesc;
@@ -33,6 +33,23 @@ namespace EssentialUIKit.Models.Services
 
         #region Properties
 
+        /// <summary>
+        /// Gets or sets the name of seq.
+        /// </summary>
+        /// <value>The service Id.</value>
+        public string serviceId
+        {
+            get
+            {
+                return this._serviceId;
+            }
+
+            set
+            {
+                this._serviceId = value;
+                this.OnPropertyChanged("serviceId");
+            }
+        }
         /// <summary>
         /// Gets or sets the name of seq.
         /// </summary>

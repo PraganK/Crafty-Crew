@@ -76,7 +76,7 @@
                 <Image
                     Grid.Row="1"
                     Aspect="AspectFill"
-                    BackgroundColor="{DynamicResource Gray-200}"
+                    BackgroundColor="Transparent"
                     HorizontalOptions="Fill"
                     Source="OurTeam.png"
                     VerticalOptions="Fill" />
