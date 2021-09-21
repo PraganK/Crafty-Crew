@@ -1780,24 +1780,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pragan\\.nuget\\packages\\": {},
+    "C:\\Users\\ramsheer\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit\\EssentialUIKit.csproj",
+      "projectUniqueName": "C:\\Users\\ramsheer\\source\\repos\\Crafty-Crew-Dev\\EssentialUIKit\\EssentialUIKit.csproj",
       "projectName": "EssentialUIKit",
-      "projectPath": "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit\\EssentialUIKit.csproj",
-      "packagesPath": "C:\\Users\\Pragan\\.nuget\\packages\\",
-      "outputPath": "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit\\obj\\",
+      "projectPath": "C:\\Users\\ramsheer\\source\\repos\\Crafty-Crew-Dev\\EssentialUIKit\\EssentialUIKit.csproj",
+      "packagesPath": "C:\\Users\\ramsheer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ramsheer\\source\\repos\\Crafty-Crew-Dev\\EssentialUIKit\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "E:\\Mobile App\\Crafty-Crew\\NuGet.Config",
-        "C:\\Users\\Pragan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ramsheer\\source\\repos\\Crafty-Crew-Dev\\NuGet.Config",
+        "C:\\Users\\ramsheer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

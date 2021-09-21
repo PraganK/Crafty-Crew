@@ -27,12 +27,14 @@
 
 
      <local:HomePage Title="Home">
-        
+        <local:HomePage.IconImageSource>
+            <FontImageSource FontFamily="{StaticResource FontIcons}"
+                                 Glyph="{StaticResource HomeIcon}"
+                                 Size="16"/>
+        </local:HomePage.IconImageSource>
     </local:HomePage>
 
-    <RamTest:ArticleParallaxHeaderPage Title="Catt">
-
-    </RamTest:ArticleParallaxHeaderPage>
+  
 
     <!--<RamTest:CategoryTilePage Title="Catt">
 

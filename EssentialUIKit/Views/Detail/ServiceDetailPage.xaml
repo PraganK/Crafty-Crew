@@ -22,13 +22,13 @@
         <converter:BooleanToStringConverter x:Key="boolToStringConverter" />
     </ContentPage.Resources>
 
-    <ContentPage.BindingContext>
+    <!--<ContentPage.BindingContext>
         <viewModel:ServiceDetailPageViewModel>
             <x:Arguments>
                 <x:String>TK_ME_HOS</x:String>
             </x:Arguments>
         </viewModel:ServiceDetailPageViewModel>
-    </ContentPage.BindingContext>
+    </ContentPage.BindingContext>-->
 
     <ContentPage.ControlTemplate>
         <ControlTemplate>

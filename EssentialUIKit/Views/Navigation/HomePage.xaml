@@ -20,9 +20,12 @@
         <ResourceDictionary>
 
             <ResourceDictionary.MergedDictionaries>
-               
 
+                <ResourceDictionary Source="Styles.xaml" />
                 <ResourceDictionary Source="../Catalog/Styles.xaml" />
+
+   
+                
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -98,7 +101,7 @@
                         ItemsSource="{Binding lstServices}"
                     SelectionMode="None"
                     TapCommand="{Binding ItemSelectedCommand}"
-                    
+                      
                     RowSpacing="0"
                     SelectionBackgroundColor="Transparent" 
                     
@@ -129,7 +132,8 @@
 
                                     <!--  Product image  -->
 
-                                    <Image
+                                        <Image
+                                            
                                         Margin="0,0,0,8"
                                         Aspect="AspectFill"
                                         BackgroundColor="{DynamicResource Gray-200}"
@@ -137,10 +141,20 @@
                                         HorizontalOptions="Center"
                                         Source="{Binding imagePath}"
                                         VerticalOptions="Center"
-                                        WidthRequest="165" />
+                                        
+                                        WidthRequest="165" >
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer
+                                                    Tapped="OnImageNameTapped"
+                                                    CommandParameter="{Binding serviceId}"
+                                                    NumberOfTapsRequired="1" />
+                                            </Image.GestureRecognizers>
 
-                                    <!--  Product name  -->
-                                    <Label
+
+                                        </Image>
+
+                                        <!--  Product name  -->
+                                        <Label
                                         Margin="0,0,0,8"
                                         FontFamily="{StaticResource Montserrat-Medium}"
                                         FontSize="16"
@@ -148,10 +162,18 @@
                                         LineHeight="1.25"
                                         Text="{Binding category}"
                                        
-                                        TextColor="{DynamicResource Gray-900}" />
+                                        TextColor="{DynamicResource Gray-900}" >
+                                            <Label.GestureRecognizers>
+                                                <TapGestureRecognizer
+                                                    Tapped="OnImageNameTapped"
+                                                    CommandParameter="{Binding serviceId}"
+                                                    NumberOfTapsRequired="1" />
+                                            </Label.GestureRecognizers>
+
+                                        </Label>
 
 
-                                    <Label 
+                                        <Label 
                                         Margin="0,2,0,8"
                                         FontFamily="{StaticResource Montserrat-Regular}"
                                         FontSize="12"
