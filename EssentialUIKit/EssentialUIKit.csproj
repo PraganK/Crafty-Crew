@@ -250,9 +250,6 @@
 	<Compile Update="Views\Shopping\OnBoardingAnimationPage.xaml.cs">
 	  <DependentUpon>%(Filename)</DependentUpon>
 	</Compile>
-	<Compile Update="Views\Shopping\PaymentSuccessPage.xaml.cs">
-	  <DependentUpon>%(Filename)</DependentUpon>
-	</Compile>
 	<Compile Update="Views\Shopping\PaymentView.xaml.cs">
 	  <DependentUpon>%(Filename)</DependentUpon>
 	</Compile>

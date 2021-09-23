@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using EssentialUIKit.AppLayout.Views;
+using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
 namespace EssentialUIKit.ViewModels.Shopping
@@ -87,7 +88,7 @@ namespace EssentialUIKit.ViewModels.Shopping
         /// </summary>
         private void TrackOrderClicked(object obj)
         {
-            // Do something
+            Application.Current.MainPage.Navigation.PushAsync(new NewHomePage());
         }
 
         /// <summary>

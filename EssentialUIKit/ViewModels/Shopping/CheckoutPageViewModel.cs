@@ -296,17 +296,19 @@ namespace EssentialUIKit.ViewModels.Shopping
         /// <param name="obj">The Object</param>
         private void PlaceOrderClicked(object obj)
         {
-            if (Device.RuntimePlatform == "UWP")
-            {
-                Application.Current.MainPage.Navigation.PushAsync(new PaymentSuccessPage());
-            }
-            else
-            {
-                Template template = new Template();
-                template.Name = "Payment Success Page";
-                template.PageName = "Views.Shopping.PaymentSuccessPage";
-                Application.Current.MainPage.Navigation.PushAsync(new TemplateHostPage(template));
-            }
+            Application.Current.MainPage.Navigation.PushAsync(new PaymentSuccessPage());
+
+            //if (Device.RuntimePlatform == "UWP")
+            //{
+            //    Application.Current.MainPage.Navigation.PushAsync(new PaymentSuccessPage());
+            //}
+            //else
+            //{
+            //    Template template = new Template();
+            //    template.Name = "Payment Success Page";
+            //    template.PageName = "Views.Shopping.PaymentSuccessPage";
+            //    Application.Current.MainPage.Navigation.PushAsync(new TemplateHostPage(template));
+            //}
         }
 
         /// <summary>

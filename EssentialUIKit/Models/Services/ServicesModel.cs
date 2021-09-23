@@ -1,4 +1,6 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.Serialization;
 using Xamarin.Forms.Internals;
 
 namespace EssentialUIKit.Models.Services
@@ -163,6 +165,10 @@ namespace EssentialUIKit.Models.Services
                 this.OnPropertyChanged("imagePath");
             }
         }
+
+        [DataMember(Name = "period")]
+        public List<string> Period { get; set; } = new List<string> { "One-time", "1 Week", "1 Month", "6 Months", " 1 Year" };
+
 
         #endregion
 

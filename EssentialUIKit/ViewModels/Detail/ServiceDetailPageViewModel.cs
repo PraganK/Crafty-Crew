@@ -75,7 +75,7 @@ namespace EssentialUIKit.ViewModels.Detail
         /// </summary>
         private string subTitle2;
 
-        private ServicesModel serviceDetail;
+        private List<string> lstPeriod;
         #endregion
 
         #region Constructor
@@ -166,16 +166,18 @@ namespace EssentialUIKit.ViewModels.Detail
             this.articleSubImage = App.BaseImageUrl + "BlogDetail.png";
             this.articleAuthor = "Aster Clinic";
             this.articleDate = "Sep 20";
-            this.articleReadingTime = "5 mins read";
+            //this.articleReadingTime = "5 mins read";
             this.articleContent = service.longDesc;
-            this.SubTitle1 = "Procedure for writing out your ideas";
+            this.SubTitle1 = "Package Includes";
             this.SubTitle2 = "RELATED STORIES";
-                       
+
+            this.lstPeriod = service.Period;
+
             this.ContentList = new ObservableCollection<Model>
             {
-                new Model { Description = "Write a one- or two-sentence summary of the goal or project you want to complete." },
-                new Model { Description = "Then write every idea you associate with the goal or project on separate pieces of paper (sticky notes are ideal). Don’t self-edit at this point, write everything that comes to mind." },
-                new Model { Description = "Spread all the pieces of paper onto a table, a desk, a bed, or even the floor." },
+                new Model { Description = "Pick n drop service" },
+                new Model { Description = "Personal caretaker accompanied to hospital\'clinic" },
+                new Model { Description = "Tablet reminders sent\'configured according to prescription if provided" },
                 new Model { Description = "Sort the ideas by category—some will be tasks to do, others will be equipment or training you need." },
                 new Model { Description = "Organize the categories from top to bottom according to the sequence in which they need to occur. This will help you remove items that are redundant and identify items that need to be added." },
                 new Model { Description = "Now you’re ready to enter the items in an organized fashion into your project management software." },
@@ -184,6 +186,9 @@ namespace EssentialUIKit.ViewModels.Detail
             this.FavouriteCommand = new Command(this.FavouriteButtonClicked);
             this.BookmarkCommand = new Command(this.BookmarkButtonClicked);
             this.ItemSelectedCommand = new Command(this.ItemClicked);
+
+            this.PeriodCommand = new Command(this.PeriodClicked);
+            this.AddToCartCommand = new Command(this.AddToCartClicked);
         }
         #endregion
 
@@ -197,6 +202,26 @@ namespace EssentialUIKit.ViewModels.Detail
         #endregion
 
         #region Public properties
+
+        /// <summary>
+        /// Gets or sets the article date
+        /// </summary>
+        public List<string> PeriodList
+        {
+            get
+            {
+                return this.lstPeriod;
+            }
+
+            set
+            {
+                if (this.lstPeriod != value)
+                {
+                    this.lstPeriod = value;
+                    this.NotifyPropertyChanged("PeriodList");
+                }
+            }
+        }
 
         /// <summary>
         /// Gets or sets the article name
@@ -430,6 +455,16 @@ namespace EssentialUIKit.ViewModels.Detail
 
         #region Command
         /// <summary>
+        /// Gets or sets the command that will be executed when the AddToCart button is clicked.
+        /// </summary>
+        public Command AddToCartCommand { get; set; }
+
+        /// <summary>
+        /// Gets or sets the command that will be executed when the size button is clicked.
+        /// </summary>
+        public Command PeriodCommand { get; set; }
+
+        /// <summary>
         /// Gets or sets the command is executed when the favourite button is clicked.
         /// </summary>
         public Command FavouriteCommand { get; set; }
@@ -447,6 +482,21 @@ namespace EssentialUIKit.ViewModels.Detail
         #endregion
 
         #region Methods
+        private void AddToCartClicked(object obj)
+        {
+            //this.cartItemCount = this.cartItemCount ?? 0;
+            //this.CartItemCount += 1;
+            // Do something            
+        }
+
+        /// <summary>
+        /// Invoked when the variant button is clicked.
+        /// </summary>
+        /// <param name="obj">The Object</param>
+        private void PeriodClicked(object obj)
+        {
+            // Do something
+        }
 
         /// <summary>
         /// Invoked when the favourite button clicked

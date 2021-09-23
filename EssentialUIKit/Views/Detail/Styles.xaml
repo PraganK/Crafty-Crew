@@ -147,7 +147,7 @@
         <Setter Property="SegmentBorderThickness" Value="1" />
         <Setter Property="SegmentCornerRadius" Value="20" />
         <Setter Property="SegmentHeight" Value="40" />
-        <Setter Property="SegmentWidth" Value="40" />
+        <Setter Property="SegmentWidth" Value="75" />
         <Setter Property="SegmentPadding" Value="8" />
         <Setter Property="SelectionAnimationDuration" Value="0" />
         <Setter Property="HorizontalOptions" Value="{OnIdiom Default=Start, Phone=Center}" />

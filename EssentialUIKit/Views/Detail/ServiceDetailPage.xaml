@@ -3,6 +3,7 @@
     x:Class="EssentialUIKit.Views.Detail.ServiceDetailPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:behavior="clr-namespace:EssentialUIKit.Behaviors.Detail"
     xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
     xmlns:controls="clr-namespace:EssentialUIKit.Controls"
     xmlns:converter="clr-namespace:EssentialUIKit.Converters"
@@ -12,6 +13,10 @@
     BackgroundColor="{DynamicResource Gray-White}"
     NavigationPage.HasNavigationBar="False">
 
+    <ContentPage.Behaviors>
+        <behavior:CartBehavior />
+    </ContentPage.Behaviors>
+    
     <ContentPage.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -131,7 +136,7 @@
                         Text="{Binding ArticleContent}"
                         TextColor="{DynamicResource Gray-700}" />
 
-                    <!--  Decription image of the blog  -->
+                    <!--  Decription image of the blog  --><!--
                     <Image
                         Margin="{OnIdiom Phone='16,8',
                                          Tablet='0,24,0,8',
@@ -144,7 +149,7 @@
                                                     Phone=FillAndExpand}"
                         Source="{Binding ArticleSubImage}" />
 
-                    <!--  Description image name  -->
+                    --><!--  Description image name  --><!--
                     <Label
                         FontFamily="{StaticResource Montserrat-Medium}"
                         FontSize="12"
@@ -152,7 +157,7 @@
                         HorizontalTextAlignment="Center"
                         LineHeight="1.25"
                         Text="Image_1"
-                        TextColor="{DynamicResource Gray-700}" />
+                        TextColor="{DynamicResource Gray-700}" />-->
 
                     <!--  Subtitle of the blog  -->
                     <Label
@@ -192,6 +197,56 @@
                     </StackLayout>
 
                 </StackLayout>
+                
+                <BoxView
+                            Grid.Row="{OnIdiom Default=5,
+                                               Phone=4}"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="5"
+                            HeightRequest="{OnIdiom Tablet=24,
+                                                    Desktop=8,
+                                                    Phone=16}"
+                            Style="{StaticResource BoxViewStyle}"
+                            Color="{OnIdiom Default={DynamicResource Gray-100},
+                                            Desktop={DynamicResource Gray-White},
+                                            Converter={StaticResource DynamicResourceToColorConverter}}" />
+
+                <Label
+                            Grid.Row="{OnIdiom Default=6,
+                                               Phone=5}"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="3"
+                            Margin="15,24,0,8"
+                            FontFamily="{StaticResource Montserrat-SemiBold}"
+                            FontSize="16"
+                            Style="{StaticResource LabelStyle}"
+                            Text="Select Period"
+                            TextColor="{DynamicResource Gray-900}" />
+
+                <!--  Size variant buttons  -->
+                <buttons:SfSegmentedControl
+                            Grid.Row="{OnIdiom Default=7,
+                                               Phone=6}"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="3"
+                            Margin="0,0,0,16"
+                            ItemsSource="{Binding PeriodList}"
+                            Style="{StaticResource SfSegmentedControlStyle}">
+                    <buttons:SfSegmentedControl.Behaviors>
+                        <behavior:SegmentedControlBehavior Command="{Binding BindingContext.PeriodCommand, Source={x:Reference detailPage}}" />
+                    </buttons:SfSegmentedControl.Behaviors>
+                </buttons:SfSegmentedControl>
+
+                <BoxView
+                            Grid.Row="8"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="5"
+                            HeightRequest="{OnIdiom Tablet=24,
+                                                    Default=0}"
+                            Style="{StaticResource BoxViewStyle}"
+                            Color="{OnIdiom Default={DynamicResource Gray-100},
+                                            Desktop={DynamicResource Gray-White},
+                                            Converter={StaticResource DynamicResourceToColorConverter}}" />
 
                 <StackLayout
                             Grid.Row="{OnIdiom Default=4,
@@ -224,7 +279,9 @@
                                 Text="Subscribe"
                                 TextColor="{DynamicResource Gray-White}"
                                 WidthRequest="{OnIdiom Default=200,
-                                                       Phone=-1}" />
+                                                       Phone=-1}" 
+                        
+                                Clicked="OnButtonClicked"/>
                 </StackLayout>
                 
                 <!--  Related stroies label  -->

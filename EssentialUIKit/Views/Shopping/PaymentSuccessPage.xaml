@@ -52,7 +52,7 @@
                 <button:SfButton
                     Command="{Binding TrackOrderCommand}"
                     Style="{StaticResource SfGradientButtonStyle}"
-                    Text="TRACK YOUR ORDER" />
+                    Text="Go To Home" />
 
             </StackLayout>
         </ScrollView>
