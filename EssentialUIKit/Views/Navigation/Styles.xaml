@@ -19,6 +19,8 @@
     <x:String x:Key="HomeIcon">&#xe706;</x:String>
     <x:String x:Key="CartIcon">&#xe708;</x:String>
     <x:String x:Key="FavIcon">&#xe701;</x:String>
+    <x:String x:Key="PhoneIcon">&#xe71c;</x:String>
+    <x:String x:Key="OfferIcon">&#xe736;</x:String>
     
     <Style x:Key="RatingLabelStyle" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}" />

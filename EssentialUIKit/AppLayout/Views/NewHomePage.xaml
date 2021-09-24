@@ -45,20 +45,20 @@
 
 
 
-    <local:AboutUsPage Title="Favourite">
+    <local:AboutUsPage Title="Offers">
         <local:AboutUsPage.IconImageSource>
             <FontImageSource FontFamily="{StaticResource FontIcons}"
-                                 Glyph="{StaticResource FavIcon}"
+                                 Glyph="{StaticResource OfferIcon}"
                                  Size="16"/>
         </local:AboutUsPage.IconImageSource>
     </local:AboutUsPage>
-    <local:AboutUsPage Title="Cart">
-        <local:AboutUsPage.IconImageSource>
+    <local:ContactUsPage Title="Contact Us">
+        <local:ContactUsPage.IconImageSource>
             <FontImageSource FontFamily="{StaticResource FontIcons}"
-                                 Glyph="{StaticResource CartIcon}"
+                                 Glyph="{StaticResource PhoneIcon}"
                                  Size="16"/>
-        </local:AboutUsPage.IconImageSource>
-    </local:AboutUsPage>
+        </local:ContactUsPage.IconImageSource>
+    </local:ContactUsPage>
     <local:AboutUsPage Title="About Us">
         <local:AboutUsPage.IconImageSource>
             <FontImageSource FontFamily="{StaticResource FontIcons}"

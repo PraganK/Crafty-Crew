@@ -44,13 +44,13 @@ namespace EssentialUIKit.ViewModels.Shopping
             {
                 new Customer
                 {
-                    CustomerId = 1, CustomerName = "John Doe", AddressType = "Home", Address = "410 Terry Ave N, USA",
-                    MobileNumber = "+1-202-555-0101"
+                    CustomerId = 1, CustomerName = "Pragan", AddressType = "Home", Address = "12b Street, UAE",
+                    MobileNumber = "+971-521876543"
                 },
                 new Customer
                 {
-                    CustomerId = 1, CustomerName = "John Doe", AddressType = "Office",
-                    Address = "388 Fort Worth, Texas, United States", MobileNumber = "+1-356-636-8572"
+                    CustomerId = 2, CustomerName = "Prasath", AddressType = "Office",
+                    Address = "M Builduing, Meydan, UAE", MobileNumber = "+971-521654321"
                 },
             };
 
@@ -58,10 +58,10 @@ namespace EssentialUIKit.ViewModels.Shopping
             {
                 new Payment
                 {
-                    PaymentMode = "Goldman Sachs Bank Credit Card", CardNumber = "48** **** **** 9876",
+                    PaymentMode = "Emirates NBD Bank Credit Card", CardNumber = "48** **** **** 9876",
                     CardTypeIcon = "Card.png"
                 },
-                new Payment {PaymentMode = "Wells Fargo Bank Credit Card"},
+                new Payment {PaymentMode = "Emirates Islamic Bank Credit Card"},
                 new Payment {PaymentMode = "Debit / Credit Card"},
                 new Payment {PaymentMode = "NetBanking"},
                 new Payment {PaymentMode = "Cash on Delivery"},

@@ -123,10 +123,10 @@ namespace EssentialUIKit.ViewModels.ContactUs
                 new LocationMarker
                 {
                     PinImage = "Pin.png",
-                    Header = "Sipes Inc",
-                    Address = "7654 Cleveland street, Phoenixville, PA 19460",
-                    EmailId = "dopuyi@hostguru.info",
-                    PhoneNumber = "+1-202-555-0101",
+                    Header = "Crafty Crew Tech",
+                    Address = "123 New street, Dubai, UAE",
+                    EmailId = "admin@cctech.info",
+                    PhoneNumber = "+971-521555111",
                     CloseImage = "Close.png",
                     Latitude = "40.133808",
                     Longitude = "-75.516279"

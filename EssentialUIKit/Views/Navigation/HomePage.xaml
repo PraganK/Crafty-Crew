@@ -160,7 +160,7 @@
                                         FontSize="16"
                                         HorizontalOptions="Center"
                                         LineHeight="1.25"
-                                        Text="{Binding category}"
+                                        Text="{Binding title}"
                                        
                                         TextColor="{DynamicResource Gray-900}" >
                                             <Label.GestureRecognizers>
@@ -177,12 +177,10 @@
                                         Margin="0,2,0,8"
                                         FontFamily="{StaticResource Montserrat-Regular}"
                                         FontSize="12"
-                                      HorizontalOptions="Center"
+                                        HorizontalOptions="Center"
                                         LineHeight="1.25"
-                                           Text="{Binding title}"
-                                        TextColor="{DynamicResource Gray-900}" 
-                                      
-                                       />
+                                           Text="{Binding category}"
+                                        TextColor="{DynamicResource Gray-900}" />
 
 
 

@@ -11,9 +11,7 @@
     xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
     xmlns:local="clr-namespace:EssentialUIKit.Views.Forms"
     xmlns:viewModel="clr-namespace:EssentialUIKit.ViewModels.Forms"
-    BackgroundImageSource="{core:OnPlatformOrientationStringValue Default=LoginBackground.png,
-                                                                  iOSPhoneLandscape=LoginBackground-Landscape.png,
-                                                                  iOSTabletLandscape=LoginBackground-Landscape.png}"
+    BackgroundImageSource="LoginBackground.png"
     NavigationPage.HasNavigationBar="False"
     Style="{StaticResource ContentPageStyle}">
 
@@ -125,14 +123,16 @@
                             Clicked="NavigateButton_OnClicked"/>
 
 
-                        <Label
+                        <!--<Label
                             Grid.Row="6"
                             FontFamily="{StaticResource Montserrat-Medium}"
                             HorizontalTextAlignment="Center"
                             Style="{StaticResource LabelStyle}"
                             Text="Or create an account using social media" />
 
+                        -->
                         <!--  Login through facebook account  -->
+                        <!--
                         <buttons:SfButton
                             Grid.Row="7"
                             Margin="0,16,0,16"
@@ -158,7 +158,7 @@
                                         TextColor="{DynamicResource Gray-White}" />
                                 </StackLayout>
                             </buttons:SfButton.Content>
-                        </buttons:SfButton>
+                        </buttons:SfButton>-->
 
                     </Grid>
 
