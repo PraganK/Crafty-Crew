@@ -20,8 +20,8 @@ namespace EssentialUIKit.Models.Services
         private string _category;
         private string _imagePath;
 
-        private string _price;
-
+        private string _cost;
+        private string _discount;
         #endregion
 
         #region EventHandler
@@ -69,17 +69,31 @@ namespace EssentialUIKit.Models.Services
                 this.OnPropertyChanged("title");
             }
         }
-        public string price
+        public string cost
         {
             get
             {
-                return this._price;
+                return this._cost;
             }
 
             set
             {
-                this._price = value;
-                this.OnPropertyChanged("price");
+                this._cost = value;
+                this.OnPropertyChanged("cost");
+            }
+        }
+
+        public string discount
+        {
+            get
+            {
+                return this._discount;
+            }
+
+            set
+            {
+                this._discount = value;
+                this.OnPropertyChanged("discount");
             }
         }
 

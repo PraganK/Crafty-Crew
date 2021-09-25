@@ -2,7 +2,6 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:EssentialUIKit.Views.Navigation"
-             xmlns:RamTest="clr-namespace:EssentialUIKit.Views.Article"
              x:Class="EssentialUIKit.AppLayout.Views.NewHomePage"
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
              android:TabbedPage.ToolbarPlacement="Bottom"
@@ -17,15 +16,7 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </TabbedPage.Resources>
-    <!--<local:PhotosPage Title="Home">
-        <local:PhotosPage.IconImageSource>
-            <FontImageSource FontFamily="{StaticResource FontIcons}"
-                                 Glyph="{StaticResource HomeIcon}"
-                                 Size="16"/>
-        </local:PhotosPage.IconImageSource>
-    </local:PhotosPage>-->
-
-
+  
      <local:HomePage Title="Home">
         <local:HomePage.IconImageSource>
             <FontImageSource FontFamily="{StaticResource FontIcons}"
@@ -33,25 +24,13 @@
                                  Size="16"/>
         </local:HomePage.IconImageSource>
     </local:HomePage>
-
-  
-
-    <!--<RamTest:CategoryTilePage Title="Catt">
-
-    </RamTest:CategoryTilePage>-->
-    <!--<RamTest:ProductHomePage Title="Catt">
-
-    </RamTest:ProductHomePage>-->
-
-
-
-    <local:AboutUsPage Title="Offers">
-        <local:AboutUsPage.IconImageSource>
+    <local:OffersPage Title="Offers">
+        <local:OffersPage.IconImageSource>
             <FontImageSource FontFamily="{StaticResource FontIcons}"
                                  Glyph="{StaticResource OfferIcon}"
                                  Size="16"/>
-        </local:AboutUsPage.IconImageSource>
-    </local:AboutUsPage>
+        </local:OffersPage.IconImageSource>
+    </local:OffersPage>
     <local:ContactUsPage Title="Contact Us">
         <local:ContactUsPage.IconImageSource>
             <FontImageSource FontFamily="{StaticResource FontIcons}"

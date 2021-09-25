@@ -4,13 +4,14 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:behavior="clr-namespace:EssentialUIKit.Behaviors"
+    xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
     xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
     xmlns:control="clr-namespace:EssentialUIKit.Controls"
     xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      xmlns:viewModel="clr-namespace:EssentialUIKit.ViewModels.Services"  
+    xmlns:viewModel="clr-namespace:EssentialUIKit.ViewModels.Services"  
     BackgroundColor="{DynamicResource Gray-White}"
     NavigationPage.HasNavigationBar="False"
     Shell.NavBarIsVisible="False"
@@ -18,29 +19,55 @@
 
     <ContentPage.Resources>
         <ResourceDictionary>
-
             <ResourceDictionary.MergedDictionaries>
-
                 <ResourceDictionary Source="Styles.xaml" />
                 <ResourceDictionary Source="../Catalog/Styles.xaml" />
-
-   
-                
+                <ResourceDictionary Source="../Chat/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </ContentPage.Resources>
 
+    <!--<ContentPage.BindingContext>
+        <viewModel:ServicesViewModel />
+    </ContentPage.BindingContext>-->
+
+    <ContentPage.ControlTemplate>
+        <ControlTemplate>
+            <StackLayout Spacing="0">
+                <!--  Title View  -->
+                <control:TitleView Title="Home">
+                    <control:TitleView.TrailingView>
+                        <StackLayout Orientation="Horizontal">
+                            <border:SfBorder
+                                    Margin="8,0"
+                                    BackgroundColor="{DynamicResource Gray-200}"
+                                    Style="{StaticResource ProfileBorderStyle}">
+                                <Image 
+                                        HeightRequest="35"
+                                        WidthRequest="35"
+                                        Source="senior-citizen-icon-4.png"
+                                    >
+                                </Image>
+                            </border:SfBorder>
+                        </StackLayout>
+                    </control:TitleView.TrailingView>
+                </control:TitleView>
+
+                <ContentPresenter />
+            </StackLayout>
+        </ControlTemplate>
+    </ContentPage.ControlTemplate>
+
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Spacing="0">
-
-
                 <Image
                     Aspect="Fill"
                     BackgroundColor="{DynamicResource Gray-200}"
                     HeightRequest="250"
                     Source="https://devathondemo.appspot.com/images/Elderly_Care.png" />
 
+                <!--Medical-->
                 <StackLayout
                     Margin="16,25,16,0"
                     Orientation="Horizontal"
@@ -53,44 +80,137 @@
                         HorizontalOptions="StartAndExpand"
                         LineHeight="{OnPlatform Android=1.25,
                                                 Default=-1}"
-                        Text="SERVICES"
+                        Text="Medical"
                         TextColor="{DynamicResource Gray-800}"
                         VerticalOptions="Center" />
-
-                    <buttons:SfButton
-                        Margin="0"
-                        Padding="0"
-                        BackgroundColor="{DynamicResource Gray-White}"
-                        CornerRadius="4"
-                        FontFamily="{StaticResource Montserrat-SemiBold}"
-                        FontSize="12"
-                        HorizontalOptions="End"
-                        Text="VIEW ALL"
-                        TextColor="{DynamicResource HyperLink}" />
-
                 </StackLayout>
-                
+
                 <Grid RowSpacing="0" VerticalOptions="Center">
                     <Grid.BindingContext>
-                        <viewModel:ServicesViewModel />
+                        <viewModel:ServicesViewModel>
+                            <x:Arguments>
+                                <x:String>Medical</x:String>
+                            </x:Arguments>
+                        </viewModel:ServicesViewModel>
                     </Grid.BindingContext>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
 
+                    <listView:SfListView
+                    Margin="8,0"
+                    Padding="0"
+                    AutoFitMode="Height"
+                    ColumnSpacing="0"
+                    FocusBorderColor="Transparent"
+                    HeightRequest="190"
+                    HorizontalOptions="FillAndExpand"
+                    IsScrollBarVisible="False"
+                    IsStickyHeader="True"
+                    ItemsSource="{Binding lstServices}"
+                    Orientation="Horizontal"
+                    RowSpacing="0"
+                    SelectionBackgroundColor="Transparent"
+                    TapCommand="{Binding ItemSelectedCommand}">
 
-              
-                <!--<Image
-                    Aspect="Fill"
-                    BackgroundColor="{DynamicResource Gray-200}"
-                    HeightRequest="250"
-                    
-                    Source="C:\Users\ramsheer\source\repos\Crafty-Crew-Dev\EssentialUIKit\Images\NoPhotos.svg" />-->
+                        <listView:SfListView.ItemTemplate>
+                            <DataTemplate>
+                                <!--  Frame to have rounded corners  -->
+                                <control:CustomShadowFrame
+                                Margin="8"
+                                Padding="0"
+                                BackgroundColor="White"
+                                BorderColor="White"
+                                CornerRadius="4"
+                                HasShadow="true"
+                                HeightRequest="181"
+                                WidthRequest="200">
 
-               
+                                    <StackLayout
+                                    Margin="0"
+                                    Padding="0"
+                                    HorizontalOptions="CenterAndExpand"
+                                    Spacing="0"
+                                    VerticalOptions="CenterAndExpand">
 
-                <listView:SfListView
+                                        <!--  Product image  -->
+                                        <Image                                            
+                                        Margin="0,0,0,8"
+                                        Aspect="AspectFill"
+                                        BackgroundColor="{DynamicResource Gray-200}"
+                                        HeightRequest="80"
+                                        HorizontalOptions="Center"
+                                        Source="{Binding imagePath}"
+                                        VerticalOptions="Center"                                        
+                                        WidthRequest="165" >
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer
+                                                    Tapped="OnImageNameTapped"
+                                                    CommandParameter="{Binding serviceId}"
+                                                    NumberOfTapsRequired="1" />
+                                            </Image.GestureRecognizers>
+                                        </Image>
+
+                                        <!--  Product name  -->
+                                        <Label
+                                        Margin="10,0,5,0"
+                                        FontFamily="{StaticResource Montserrat-Medium}"
+                                        FontSize="16"
+                                        HorizontalOptions="Center"
+                                        LineHeight="1.25"
+                                        Text="{Binding title}"
+                                       
+                                        TextColor="{DynamicResource Gray-900}" >
+                                            <Label.GestureRecognizers>
+                                                <TapGestureRecognizer
+                                                    Tapped="OnImageNameTapped"
+                                                    CommandParameter="{Binding serviceId}"
+                                                    NumberOfTapsRequired="1" />
+                                            </Label.GestureRecognizers>
+
+                                        </Label>
+
+                                    </StackLayout>
+                                </control:CustomShadowFrame>
+                            </DataTemplate>
+                        </listView:SfListView.ItemTemplate>
+                    </listView:SfListView>
+
+                </Grid>
+
+                <!--Rejuvenation-->
+                <StackLayout
+                    Margin="16,25,16,0"
+                    Orientation="Horizontal"
+                    Spacing="0">
+
+                    <Label
+                        Margin="0,5,0,0"
+                        FontFamily="{StaticResource Montserrat-SemiBold}"
+                        FontSize="15"
+                        HorizontalOptions="StartAndExpand"
+                        LineHeight="{OnPlatform Android=1.25,
+                                                Default=-1}"
+                        Text="Rejuvenation"
+                        TextColor="{DynamicResource Gray-800}"
+                        VerticalOptions="Center" />
+                </StackLayout>
+
+                <Grid RowSpacing="0" VerticalOptions="Center">
+                    <Grid.BindingContext>
+                        <viewModel:ServicesViewModel>
+                            <x:Arguments>
+                                <x:String>Rejuvenation</x:String>
+                            </x:Arguments>
+                        </viewModel:ServicesViewModel>
+                    </Grid.BindingContext>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <listView:SfListView
                     Margin="8,0"
                     Padding="0"
                     AutoFitMode="Height"
@@ -98,42 +218,36 @@
                     FocusBorderColor="Transparent"
                     HorizontalOptions="FillAndExpand"
                     IsStickyHeader="True"
-                        ItemsSource="{Binding lstServices}"
+                    ItemsSource="{Binding lstServices}"
                     SelectionMode="None"
-                    TapCommand="{Binding ItemSelectedCommand}"
-                      
+                    TapCommand="{Binding ItemSelectedCommand}"                      
                     RowSpacing="0"
-                    SelectionBackgroundColor="Transparent" 
-                    
-                    >
-                    
-          <!--ItemsSource="{Binding NewArrivalProducts}"-->
-                    <listView:SfListView.ItemTemplate>
+                    SelectionBackgroundColor="Transparent" >
 
-                        <DataTemplate>
+                        <listView:SfListView.ItemTemplate>
+                            <DataTemplate>
 
-                            <!--  Frame to have rounded corners  -->
-                            <control:CustomShadowFrame
+                                <!--  Frame to have rounded corners  -->
+                                <control:CustomShadowFrame
                                 Margin="8"
                                 Padding="0"
                                 BackgroundColor="White"
                                 BorderColor="White"
                                 CornerRadius="4"
                                 HasShadow="true"
-                                HeightRequest="189"
+                                HeightRequest="150"
                                 WidthRequest="165">
 
-                                <StackLayout
+                                    <StackLayout
                                     Margin="0"
                                     Padding="0"
                                     HorizontalOptions="CenterAndExpand"
                                     Spacing="0"
                                     VerticalOptions="CenterAndExpand">
 
-                                    <!--  Product image  -->
+                                        <!--  Product image  -->
 
-                                        <Image
-                                            
+                                        <Image                                            
                                         Margin="0,0,0,8"
                                         Aspect="AspectFill"
                                         BackgroundColor="{DynamicResource Gray-200}"
@@ -155,7 +269,7 @@
 
                                         <!--  Product name  -->
                                         <Label
-                                        Margin="0,0,0,8"
+                                        Margin="10,0,5,0"
                                         FontFamily="{StaticResource Montserrat-Medium}"
                                         FontSize="16"
                                         HorizontalOptions="Center"
@@ -172,36 +286,144 @@
 
                                         </Label>
 
+                                    </StackLayout>
+                                </control:CustomShadowFrame>
+                            </DataTemplate>
+                        </listView:SfListView.ItemTemplate>
 
-                                        <Label 
-                                        Margin="0,2,0,8"
-                                        FontFamily="{StaticResource Montserrat-Regular}"
-                                        FontSize="12"
+                        <listView:SfListView.Behaviors>
+                            <behavior:SfListViewExtendHeightBehavior />
+                        </listView:SfListView.Behaviors>
+
+                        <!--  Layout to customize number of columns in SfListView  -->
+                        <listView:SfListView.LayoutManager>
+                            <listView:GridLayout SpanCount="{core:OnPlatformOrientationIntValue Desktop=4, PhonePortrait=2, PhoneLandscape=4, TabletPortrait=4, TabletLandscape=5}" />
+                        </listView:SfListView.LayoutManager>
+                    </listView:SfListView>
+                </Grid>
+                
+                <!--Food-->
+                <StackLayout
+                    Margin="16,25,16,0"
+                    Orientation="Horizontal"
+                    Spacing="0">
+
+                    <Label
+                        Margin="0,5,0,0"
+                        FontFamily="{StaticResource Montserrat-SemiBold}"
+                        FontSize="15"
+                        HorizontalOptions="StartAndExpand"
+                        LineHeight="{OnPlatform Android=1.25,
+                                                Default=-1}"
+                        Text="Food"
+                        TextColor="{DynamicResource Gray-800}"
+                        VerticalOptions="Center" />
+                </StackLayout>
+
+                <Grid RowSpacing="0" VerticalOptions="Center">
+                    <Grid.BindingContext>
+                        <viewModel:ServicesViewModel>
+                            <x:Arguments>
+                                <x:String>Food</x:String>
+                            </x:Arguments>
+                        </viewModel:ServicesViewModel>
+                    </Grid.BindingContext>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <listView:SfListView
+                    Margin="8,0"
+                    Padding="0"
+                    AutoFitMode="Height"
+                    ColumnSpacing="0"
+                    FocusBorderColor="Transparent"
+                    HorizontalOptions="FillAndExpand"
+                    IsStickyHeader="True"
+                    ItemsSource="{Binding lstServices}"
+                    SelectionMode="None"
+                    TapCommand="{Binding ItemSelectedCommand}"                      
+                    RowSpacing="0"
+                    SelectionBackgroundColor="Transparent" >
+
+                        <listView:SfListView.ItemTemplate>
+                            <DataTemplate>
+
+                                <!--  Frame to have rounded corners  -->
+                                <control:CustomShadowFrame
+                                Margin="8"
+                                Padding="0"
+                                BackgroundColor="White"
+                                BorderColor="White"
+                                CornerRadius="4"
+                                HasShadow="true"
+                                HeightRequest="150"
+                                WidthRequest="165">
+
+                                    <StackLayout
+                                    Margin="0"
+                                    Padding="0"
+                                    HorizontalOptions="CenterAndExpand"
+                                    Spacing="0"
+                                    VerticalOptions="CenterAndExpand">
+
+                                        <!--  Product image  -->
+
+                                        <Image                                            
+                                        Margin="0,0,0,8"
+                                        Aspect="AspectFill"
+                                        BackgroundColor="{DynamicResource Gray-200}"
+                                        HeightRequest="80"
+                                        HorizontalOptions="Center"
+                                        Source="{Binding imagePath}"
+                                        VerticalOptions="Center"
+                                        
+                                        WidthRequest="165" >
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer
+                                                    Tapped="OnImageNameTapped"
+                                                    CommandParameter="{Binding serviceId}"
+                                                    NumberOfTapsRequired="1" />
+                                            </Image.GestureRecognizers>
+
+
+                                        </Image>
+
+                                        <!--  Product name  -->
+                                        <Label
+                                        Margin="10,0,5,0"
+                                        FontFamily="{StaticResource Montserrat-Medium}"
+                                        FontSize="16"
                                         HorizontalOptions="Center"
                                         LineHeight="1.25"
-                                           Text="{Binding category}"
-                                        TextColor="{DynamicResource Gray-900}" />
+                                        Text="{Binding title}"
+                                       
+                                        TextColor="{DynamicResource Gray-900}" >
+                                            <Label.GestureRecognizers>
+                                                <TapGestureRecognizer
+                                                    Tapped="OnImageNameTapped"
+                                                    CommandParameter="{Binding serviceId}"
+                                                    NumberOfTapsRequired="1" />
+                                            </Label.GestureRecognizers>
 
+                                        </Label>
 
+                                    </StackLayout>
+                                </control:CustomShadowFrame>
+                            </DataTemplate>
+                        </listView:SfListView.ItemTemplate>
 
+                        <listView:SfListView.Behaviors>
+                            <behavior:SfListViewExtendHeightBehavior />
+                        </listView:SfListView.Behaviors>
 
+                        <!--  Layout to customize number of columns in SfListView  -->
+                        <listView:SfListView.LayoutManager>
+                            <listView:GridLayout SpanCount="{core:OnPlatformOrientationIntValue Desktop=4, PhonePortrait=2, PhoneLandscape=4, TabletPortrait=4, TabletLandscape=5}" />
+                        </listView:SfListView.LayoutManager>
+                    </listView:SfListView>
 
-                                </StackLayout>
-                            </control:CustomShadowFrame>
-                        </DataTemplate>
-                    </listView:SfListView.ItemTemplate>
-
-                    <listView:SfListView.Behaviors>
-                        <behavior:SfListViewExtendHeightBehavior />
-                    </listView:SfListView.Behaviors>
-
-                    <!--  Layout to customize number of columns in SfListView  -->
-                    <listView:SfListView.LayoutManager>
-                        <listView:GridLayout SpanCount="{core:OnPlatformOrientationIntValue Desktop=4, PhonePortrait=2, PhoneLandscape=4, TabletPortrait=4, TabletLandscape=5}" />
-                    </listView:SfListView.LayoutManager>
-                </listView:SfListView>
-
-           
                 </Grid>
             </StackLayout>
         </ScrollView>

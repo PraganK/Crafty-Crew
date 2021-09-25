@@ -17,8 +17,6 @@ namespace EssentialUIKit.Views.Navigation
         {
             InitializeComponent();
 
-            
-
             //this.BindingContext = HomeDataService.Instance.HomePageViewModel;
         }
 
