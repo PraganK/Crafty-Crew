@@ -183,7 +183,7 @@ namespace EssentialUIKit.Models.Services
         }
 
         [DataMember(Name = "period")]
-        public List<string> Period { get; set; } = new List<string> { "One-time", "1 Week", "1 Month", "6 Months", " 1 Year" };
+        public List<string> Period { get; set; } = new List<string> { "One-time", "1 Month", "6 Months", " 1 Year" };
 
 
         /// <summary>

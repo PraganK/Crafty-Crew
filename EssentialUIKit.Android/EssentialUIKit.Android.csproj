@@ -8,7 +8,7 @@
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>EssentialUIKit.Droid</RootNamespace>
-    <AssemblyName>EssentialUIKit.Android</AssemblyName>
+    <AssemblyName>KebarCare</AssemblyName>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -278,7 +278,7 @@
   </Target>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties XamarinHotReloadXFormsNugetUpgradeInfoBarEssentialUIKitAndroidHideInfoBar="True" XamarinHotReloadUnhandledDeviceExceptionEssentialUIKitAndroidHideInfoBar="True" />
+      <UserProperties XamarinHotReloadUnhandledDeviceExceptionEssentialUIKitAndroidHideInfoBar="True" XamarinHotReloadXFormsNugetUpgradeInfoBarEssentialUIKitAndroidHideInfoBar="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

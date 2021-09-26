@@ -100,7 +100,7 @@
                                     FontFamily="{StaticResource Montserrat-Medium}"
                                     Text="{Binding ArticleAuthor}"
                                     TextColor="{DynamicResource Gray-900}" />
-                                <Span Text="    " />
+                                <Span  FontFamily="{StaticResource Montserrat-Regular}" Text="    Updated on " />
                                 <Span
                                     FontFamily="{StaticResource Montserrat-Regular}"
                                     Text="{Binding ArticleDate}"
