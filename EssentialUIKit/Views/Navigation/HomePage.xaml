@@ -44,9 +44,12 @@
                                     Style="{StaticResource ProfileBorderStyle}">
                                 <Image 
                                         HeightRequest="35"
-                                        WidthRequest="35"
-                                        Source="senior-citizen-icon-4.png"
-                                    >
+                                        WidthRequest="35">
+                                    <Image.Source>
+                                        <UriImageSource Uri="https://icon-library.com/images/senior-citizen-icon/senior-citizen-icon-4.jpg" 
+			                                 CacheValidity="14" 
+			                                 CachingEnabled="true"/>
+                                    </Image.Source>
                                 </Image>
                             </border:SfBorder>
                         </StackLayout>

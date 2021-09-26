@@ -173,7 +173,7 @@
                                     FontSize="12"
                                     HorizontalOptions="Start"
                                     Style="{StaticResource LabelStyle}"
-                                    Text="{Binding cost, StringFormat='${0:0.00}'}"
+                                    Text="{Binding cost, StringFormat='AED {0:0.00}'}"
                                     TextDecorations="Strikethrough"
                                     VerticalOptions="Center"
                                     VerticalTextAlignment="Center" />

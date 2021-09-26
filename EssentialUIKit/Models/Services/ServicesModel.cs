@@ -22,6 +22,8 @@ namespace EssentialUIKit.Models.Services
 
         private string _cost;
         private string _discount;
+
+        private List<string> _packages;
         #endregion
 
         #region EventHandler
@@ -184,6 +186,23 @@ namespace EssentialUIKit.Models.Services
         public List<string> Period { get; set; } = new List<string> { "One-time", "1 Week", "1 Month", "6 Months", " 1 Year" };
 
 
+        /// <summary>
+        /// Gets or sets the image of an employee.
+        /// </summary>
+        /// <value>The image.</value>
+        public List<string> packages
+        {
+            get
+            {
+                return this._packages;
+            }
+
+            set
+            {
+                this._packages = value;
+                this.OnPropertyChanged("packages");
+            }
+        }
         #endregion
 
         #region Methods

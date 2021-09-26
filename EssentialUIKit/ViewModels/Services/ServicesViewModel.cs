@@ -58,7 +58,7 @@ namespace EssentialUIKit.ViewModels.Services
             this.ProfileImage = "http://devathondemo.appspot.com/images/pragan.png";
 
             string json = (new WebClient()).DownloadString("https://devathondemo.appspot.com/listOfServices/");
-            var services  = JsonConvert.DeserializeObject<ServicesModel[]>(json);
+            var services = JsonConvert.DeserializeObject<ServicesModel[]>(json);
 
             _lstServices = new List<ServicesModel>();
 
@@ -77,9 +77,9 @@ namespace EssentialUIKit.ViewModels.Services
                          category = item.category,
                          imagePath = item.imagePath,
 
-                         cost = item.cost, 
+                         cost = item.cost,
                          discount = ((Convert.ToDecimal(item.cost) - Convert.ToDecimal(item.cost) * Convert.ToDecimal("0.10"))).ToString()
-                     }); 
+                     });
             }
 
             this.ItemSelectedCommand = new Command(this.ItemSelected);
@@ -87,7 +87,7 @@ namespace EssentialUIKit.ViewModels.Services
 
         public ServicesViewModel(string cat)
         {
-            
+
             string json = (new WebClient()).DownloadString("https://devathondemo.appspot.com/listOfServices/");
             var services = JsonConvert.DeserializeObject<ServicesModel[]>(json);
 
@@ -104,12 +104,8 @@ namespace EssentialUIKit.ViewModels.Services
                          title = item.title,
                          subTitle = item.subTitle,
                          shortDesc = item.shortDesc,
-                         longDesc = item.longDesc,
                          category = item.category,
                          imagePath = item.imagePath,
-
-                         cost = item.cost,
-                         discount = ((Convert.ToDecimal(item.cost) - Convert.ToDecimal(item.cost) * Convert.ToDecimal("0.10"))).ToString()
                      });
             }
 

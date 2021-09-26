@@ -1,0 +1,275 @@
+{
+  "version": 2,
+  "dgSpecHash": "h6TtUbPLvRpptQg9kDw7l1jHeyaNyF6O4zsk6EYP+eeSXNEc4jPOMYRhWNu8D3JkeMMtTO/iznG2TcaCFxcQIA==",
+  "success": true,
+  "projectFilePath": "E:\\Mobile App\\Crafty-Crew\\EssentialUIKit.iOS\\EssentialUIKit.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Pragan\\.nuget\\packages\\microsoft.appcenter\\4.3.0\\microsoft.appcenter.4.3.0.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\microsoft.appcenter.analytics\\4.3.0\\microsoft.appcenter.analytics.4.3.0.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\microsoft.appcenter.crashes\\4.3.0\\microsoft.appcenter.crashes.4.3.0.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\skiasharp\\1.68.0\\skiasharp.1.68.0.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\skiasharp.extended\\1.60.0\\skiasharp.extended.1.60.0.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\skiasharp.svg\\1.60.0\\skiasharp.svg.1.60.0.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\skiasharp.views\\1.68.0\\skiasharp.views.1.68.0.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\skiasharp.views.forms\\1.68.0\\skiasharp.views.forms.1.68.0.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.licensing\\17.3.0.9-beta\\syncfusion.licensing.17.3.0.9-beta.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.buttons\\17.2.0.49\\syncfusion.xamarin.buttons.17.2.0.49.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.cards\\17.2.0.49\\syncfusion.xamarin.cards.17.2.0.49.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.core\\17.3.0.9-beta\\syncfusion.xamarin.core.17.3.0.9-beta.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.datasource\\17.2.0.49\\syncfusion.xamarin.datasource.17.2.0.49.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.expander\\17.2.0.49\\syncfusion.xamarin.expander.17.2.0.49.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.gridcommon\\17.2.0.49\\syncfusion.xamarin.gridcommon.17.2.0.49.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.sfbadgeview\\17.2.0.49\\syncfusion.xamarin.sfbadgeview.17.2.0.49.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.sfcalendar\\17.2.0.49\\syncfusion.xamarin.sfcalendar.17.2.0.49.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.sfchart\\19.2.0.60\\syncfusion.xamarin.sfchart.19.2.0.60.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.sfcombobox\\17.2.0.49\\syncfusion.xamarin.sfcombobox.17.2.0.49.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.sflistview\\17.2.0.49\\syncfusion.xamarin.sflistview.17.2.0.49.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.sfmaps\\17.2.0.49\\syncfusion.xamarin.sfmaps.17.2.0.49.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.sfparallaxview\\17.2.0.49\\syncfusion.xamarin.sfparallaxview.17.2.0.49.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.sfpopuplayout\\17.2.0.49\\syncfusion.xamarin.sfpopuplayout.17.2.0.49.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.sfprogressbar\\17.2.0.49\\syncfusion.xamarin.sfprogressbar.17.2.0.49.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.sfrating\\17.2.0.49\\syncfusion.xamarin.sfrating.17.2.0.49.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.sfrotator\\17.2.0.49\\syncfusion.xamarin.sfrotator.17.2.0.49.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\syncfusion.xamarin.sftabview\\17.2.0.49\\syncfusion.xamarin.sftabview.17.2.0.49.nupkg.sha512",
+    "C:\\Users\\Pragan\\.nuget\\packages\\xamarin.forms\\5.0.0.2083\\xamarin.forms.5.0.0.2083.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.SfTabView from 19.2.0.60 to 17.2.0.49. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> Syncfusion.Xamarin.SfTabView (>= 19.2.0.60) \r\n EssentialUIKit.iOS -> Syncfusion.Xamarin.SfTabView (>= 17.2.0.49)",
+      "libraryId": "Syncfusion.Xamarin.SfTabView",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: SkiaSharp.Views.Forms from 2.80.3 to 1.68.0. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> SkiaSharp.Views.Forms (>= 2.80.3) \r\n EssentialUIKit.iOS -> SkiaSharp.Views.Forms (>= 1.68.0)",
+      "libraryId": "SkiaSharp.Views.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.SfRotator from 19.2.0.60 to 17.2.0.49. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> Syncfusion.Xamarin.SfRotator (>= 19.2.0.60) \r\n EssentialUIKit.iOS -> Syncfusion.Xamarin.SfRotator (>= 17.2.0.49)",
+      "libraryId": "Syncfusion.Xamarin.SfRotator",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.SfListView from 19.2.0.60 to 17.2.0.49. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> Syncfusion.Xamarin.SfListView (>= 19.2.0.60) \r\n EssentialUIKit.iOS -> Syncfusion.Xamarin.SfListView (>= 17.2.0.49)",
+      "libraryId": "Syncfusion.Xamarin.SfListView",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.SfProgressBar from 19.2.0.60 to 17.2.0.49. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> Syncfusion.Xamarin.SfProgressBar (>= 19.2.0.60) \r\n EssentialUIKit.iOS -> Syncfusion.Xamarin.SfProgressBar (>= 17.2.0.49)",
+      "libraryId": "Syncfusion.Xamarin.SfProgressBar",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.SfCalendar from 19.2.0.60 to 17.2.0.49. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> Syncfusion.Xamarin.SfCalendar (>= 19.2.0.60) \r\n EssentialUIKit.iOS -> Syncfusion.Xamarin.SfCalendar (>= 17.2.0.49)",
+      "libraryId": "Syncfusion.Xamarin.SfCalendar",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.SfMaps from 19.2.0.60 to 17.2.0.49. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> Syncfusion.Xamarin.SfMaps (>= 19.2.0.60) \r\n EssentialUIKit.iOS -> Syncfusion.Xamarin.SfMaps (>= 17.2.0.49)",
+      "libraryId": "Syncfusion.Xamarin.SfMaps",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.SfPopupLayout from 19.2.0.60 to 17.2.0.49. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> Syncfusion.Xamarin.SfPopupLayout (>= 19.2.0.60) \r\n EssentialUIKit.iOS -> Syncfusion.Xamarin.SfPopupLayout (>= 17.2.0.49)",
+      "libraryId": "Syncfusion.Xamarin.SfPopupLayout",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.Expander from 19.2.0.60 to 17.2.0.49. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> Syncfusion.Xamarin.Expander (>= 19.2.0.60) \r\n EssentialUIKit.iOS -> Syncfusion.Xamarin.Expander (>= 17.2.0.49)",
+      "libraryId": "Syncfusion.Xamarin.Expander",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.Core from 19.2.0.60 to 17.3.0.9-beta. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> Syncfusion.Xamarin.Core (>= 19.2.0.60) \r\n EssentialUIKit.iOS -> Syncfusion.Xamarin.Core (>= 17.3.0.9-beta)",
+      "libraryId": "Syncfusion.Xamarin.Core",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.SfBadgeView from 19.2.0.60 to 17.2.0.49. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> Syncfusion.Xamarin.SfBadgeView (>= 19.2.0.60) \r\n EssentialUIKit.iOS -> Syncfusion.Xamarin.SfBadgeView (>= 17.2.0.49)",
+      "libraryId": "Syncfusion.Xamarin.SfBadgeView",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.DataSource from 19.2.0.60 to 17.2.0.49. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> Syncfusion.Xamarin.DataSource (>= 19.2.0.60) \r\n EssentialUIKit.iOS -> Syncfusion.Xamarin.DataSource (>= 17.2.0.49)",
+      "libraryId": "Syncfusion.Xamarin.DataSource",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.GridCommon from 19.2.0.60 to 17.2.0.49. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> Syncfusion.Xamarin.GridCommon (>= 19.2.0.60) \r\n EssentialUIKit.iOS -> Syncfusion.Xamarin.GridCommon (>= 17.2.0.49)",
+      "libraryId": "Syncfusion.Xamarin.GridCommon",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.Buttons from 19.2.0.60 to 17.2.0.49. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> Syncfusion.Xamarin.Buttons (>= 19.2.0.60) \r\n EssentialUIKit.iOS -> Syncfusion.Xamarin.Buttons (>= 17.2.0.49)",
+      "libraryId": "Syncfusion.Xamarin.Buttons",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.SfParallaxView from 19.2.0.60 to 17.2.0.49. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> Syncfusion.Xamarin.SfParallaxView (>= 19.2.0.60) \r\n EssentialUIKit.iOS -> Syncfusion.Xamarin.SfParallaxView (>= 17.2.0.49)",
+      "libraryId": "Syncfusion.Xamarin.SfParallaxView",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.SfComboBox from 19.2.0.60 to 17.2.0.49. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> Syncfusion.Xamarin.SfComboBox (>= 19.2.0.60) \r\n EssentialUIKit.iOS -> Syncfusion.Xamarin.SfComboBox (>= 17.2.0.49)",
+      "libraryId": "Syncfusion.Xamarin.SfComboBox",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.Cards from 19.2.0.60 to 17.2.0.49. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> Syncfusion.Xamarin.Cards (>= 19.2.0.60) \r\n EssentialUIKit.iOS -> Syncfusion.Xamarin.Cards (>= 17.2.0.49)",
+      "libraryId": "Syncfusion.Xamarin.Cards",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.SfRating from 19.2.0.60 to 17.2.0.49. Reference the package directly from the project to select a different version. \r\n EssentialUIKit.iOS -> EssentialUIKit -> Syncfusion.Xamarin.SfRating (>= 19.2.0.60) \r\n EssentialUIKit.iOS -> Syncfusion.Xamarin.SfRating (>= 17.2.0.49)",
+      "libraryId": "Syncfusion.Xamarin.SfRating",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
+}

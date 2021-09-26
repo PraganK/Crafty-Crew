@@ -173,15 +173,16 @@ namespace EssentialUIKit.ViewModels.Detail
 
             this.lstPeriod = service.Period;
 
-            this.ContentList = new ObservableCollection<Model>
+            this.ContentList = new ObservableCollection<Model>();
+
+            foreach (var item in service.packages)
             {
-                new Model { Description = "Pick n drop service" },
-                new Model { Description = "Personal caretaker accompanied to hospital\'clinic" },
-                new Model { Description = "Tablet reminders sent\'configured according to prescription if provided" },
-                new Model { Description = "Sort the ideas by category—some will be tasks to do, others will be equipment or training you need." },
-                new Model { Description = "Organize the categories from top to bottom according to the sequence in which they need to occur. This will help you remove items that are redundant and identify items that need to be added." },
-                new Model { Description = "Now you’re ready to enter the items in an organized fashion into your project management software." },
-            };
+                this.ContentList.Add(
+                     new Model
+                     {
+                        Description = item
+                     });
+            }
 
             this.FavouriteCommand = new Command(this.FavouriteButtonClicked);
             this.BookmarkCommand = new Command(this.BookmarkButtonClicked);
