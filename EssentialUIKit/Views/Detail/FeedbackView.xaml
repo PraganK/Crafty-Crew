@@ -51,7 +51,7 @@
         <BoxView HeightRequest="{OnIdiom Default=1, Desktop=0}" Style="{StaticResource BoxViewStyle}" />
     </StackLayout>
 
-    <StackLayout x:Name="StackLayout" BindableLayout.ItemsSource="{Binding ProductDetail.Reviews}">
+    <StackLayout x:Name="StackLayout" BindableLayout.ItemsSource="{Binding Reviews}">
         <BindableLayout.ItemTemplate>
             <DataTemplate>
                 <StackLayout Spacing="0">

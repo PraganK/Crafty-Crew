@@ -7,8 +7,7 @@
     xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
     xmlns:controls="clr-namespace:EssentialUIKit.Controls"
     xmlns:converter="clr-namespace:EssentialUIKit.Converters"
-    xmlns:template="clr-namespace:EssentialUIKit.Views.Templates"
-    xmlns:viewModel="clr-namespace:EssentialUIKit.ViewModels.Detail"
+    xmlns:local="clr-namespace:EssentialUIKit.Views.Detail"
     x:Name="detailPage"
     BackgroundColor="{DynamicResource Gray-White}"
     NavigationPage.HasNavigationBar="False">
@@ -24,6 +23,7 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
 
+        <converter:VisibilityConverter x:Key="VisibilityConverter" />
         <converter:BooleanToStringConverter x:Key="boolToStringConverter" />
     </ContentPage.Resources>
 
@@ -309,6 +309,34 @@
                         </DataTemplate>
                     </BindableLayout.ItemTemplate>
                 </StackLayout>-->
+
+                <BoxView
+                            Grid.Row="11"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="5"
+                            HeightRequest="{OnIdiom Tablet=24,
+                                                    Default=16}"
+                            Style="{StaticResource BoxViewStyle}"
+                            Color="{OnIdiom Default={DynamicResource Gray-100},
+                                            Desktop={DynamicResource Gray-White},
+                                            Converter={StaticResource DynamicResourceToColorConverter}}" />
+
+                <!--  Rating and Reviews  -->
+                <local:FeedbackView
+                            Grid.Row="12"
+                            Grid.ColumnSpan="5"
+                            IsVisible="{Binding IsReviewVisible, Converter={StaticResource VisibilityConverter}}" />
+                <Label
+                            Grid.Row="12"
+                            Grid.ColumnSpan="5"
+                            FontFamily="{StaticResource Montserrat-SemiBold}"
+                            FontSize="16"
+                            HorizontalOptions="CenterAndExpand"
+                            IsVisible="{Binding IsReviewVisible}"
+                            Text="Be the 1st one to review"
+                            TextColor="{DynamicResource Gray-900}"
+                            VerticalOptions="CenterAndExpand" />
+
 
             </StackLayout>
         </ScrollView>

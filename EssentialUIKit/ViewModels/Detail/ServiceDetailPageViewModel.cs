@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Net;
+using EssentialUIKit.Models;
 using EssentialUIKit.Models.Services;
 using Newtonsoft.Json;
 using Syncfusion.XForms.Buttons;
@@ -19,6 +20,8 @@ namespace EssentialUIKit.ViewModels.Detail
     public class ServiceDetailPageViewModel : INotifyPropertyChanged
     {
         #region Fields
+
+        private ObservableCollection<Review> reviews;
 
         /// <summary>
         /// Gets or sets the article name
@@ -76,6 +79,8 @@ namespace EssentialUIKit.ViewModels.Detail
         private string subTitle2;
 
         private List<string> lstPeriod;
+
+        private bool isReviewVisible;
         #endregion
 
         #region Constructor
@@ -161,17 +166,17 @@ namespace EssentialUIKit.ViewModels.Detail
 
             var service = lstServices.Where(x => x.serviceId == id).FirstOrDefault();
 
-            this.articleName = service.title;
-            this.articleImage = service.imagePath;
-            this.articleSubImage = App.BaseImageUrl + "BlogDetail.png";
-            this.articleAuthor = "Aster Clinic";
-            this.articleDate = "Sep 20";
+            this.ArticleName = service.title;
+            this.ArticleImage = service.imagePath;
+            //this.articleSubImage = App.BaseImageUrl + "BlogDetail.png";
+            this.ArticleAuthor = "Aster Clinic";
+            this.ArticleDate = "Sep 20";
             //this.articleReadingTime = "5 mins read";
-            this.articleContent = service.longDesc;
+            this.ArticleContent = service.longDesc;
             this.SubTitle1 = "Package Includes";
             this.SubTitle2 = "RELATED STORIES";
 
-            this.lstPeriod = service.Period;
+            this.PeriodList = service.Period;
 
             this.ContentList = new ObservableCollection<Model>();
 
@@ -184,12 +189,49 @@ namespace EssentialUIKit.ViewModels.Detail
                      });
             }
 
+            this.IsReviewVisible = false;
+
+            this.reviews = new ObservableCollection<Review>
+            {
+                new Review
+                {
+                    CustomerImage = "ProfileImage10.png",
+                    CustomerName = "Serina",
+                    Comment = "Greatest purchase I have ever made in my life. Subscribed for a year",
+                    ReviewedDate = "09 Sep, 2021",
+                    Rating = 5,
+                    Images = new List<string>
+                    {
+                        "Image1.png",
+                        "Image1.png",
+                        "Image1.png",
+                        "Image1.png"
+                    }
+                },
+                new Review
+                {
+                    CustomerImage = "ProfileImage11.png",
+                    CustomerName = "Alice",
+                    Comment = "Excellent Service! They took good care of my parents!",
+                    ReviewedDate = "21 Sep, 2021",
+                    Rating = 4,
+                    Images = new List<string>
+                    {
+                       "Image1.png",
+                       "Image1.png",
+                       "Image1.png"
+                    }
+                }
+            };
+
             this.FavouriteCommand = new Command(this.FavouriteButtonClicked);
             this.BookmarkCommand = new Command(this.BookmarkButtonClicked);
             this.ItemSelectedCommand = new Command(this.ItemClicked);
 
             this.PeriodCommand = new Command(this.PeriodClicked);
             this.AddToCartCommand = new Command(this.AddToCartClicked);
+
+            this.LoadMoreCommand = new Command(this.LoadMoreClicked);
         }
         #endregion
 
@@ -452,6 +494,40 @@ namespace EssentialUIKit.ViewModels.Detail
             }
         }
 
+        /// <summary>
+        /// Gets or sets the property that has been bound with view, which displays the empty message.
+        /// </summary>
+        public bool IsReviewVisible
+        {
+            get
+            {                
+                return this.isReviewVisible;
+            }
+            set
+            {
+                this.isReviewVisible = value;
+                this.NotifyPropertyChanged("IsReviewVisible");
+            }
+        }
+
+        public ObservableCollection<Review> Reviews
+        {
+            get
+            {
+                return this.reviews;
+            }
+
+            set
+            {
+                if (this.reviews == value)
+                {
+                    return;
+                }
+
+                this.reviews = value;
+                this.NotifyPropertyChanged("Reviews");
+            }
+        }
         #endregion
 
         #region Command
@@ -480,6 +556,10 @@ namespace EssentialUIKit.ViewModels.Detail
         /// </summary>
         public Command ItemSelectedCommand { get; set; }
 
+        /// <summary>
+        /// Gets or sets the command that will be executed when the Show All button is clicked.
+        /// </summary>
+        public Command LoadMoreCommand { get; set; }
         #endregion
 
         #region Methods
@@ -562,6 +642,15 @@ namespace EssentialUIKit.ViewModels.Detail
         private void NotifyPropertyChanged(string propertyName)
         {
             this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        /// <summary>
+        /// Invoked when Load more button is clicked.
+        /// </summary>
+        /// <param name="obj">The Object</param>
+        private void LoadMoreClicked(object obj)
+        {
+            // Do something
         }
 
         #endregion
